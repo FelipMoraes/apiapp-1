@@ -1,17 +1,49 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+<ion-header >
+    <ion-toolbar color="green">
+      <ion-title position="center">
+        Happy PET
+      </ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  
+  <ion-content>
+      <ion-card class="welcome-card">
+        <img src="https://www.petz.com.br/blog/wp-content/uploads/2017/11/cachorrinho.jpg">
+        <ion-card-header>
+          <ion-card-title>Sobre nós</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+            <ion-button color="primary"  shape="round" fill="outline" >Saiba Mais</ion-button>
+        </ion-card-content>
+      </ion-card>
+  
+      <!-- CARROUSEL -->
+      <ion-slides>
+  
+        <ion-slide class="xp">
+          <div class="slide x" >
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"/>
+            <h2>Welcome</h2>
+            <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
+          </div>
+        </ion-slide>
+  
+        <ion-slide class="xp">
+          <div class="slide x">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"/>
+            <h2>Welcome</h2>
+            <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
+          </div>
+        </ion-slide>
+  
+        <ion-slide class="xp">
+          <div class="slide x">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"/>
+            <h2>Welcome</h2>
+            <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
+          </div>
+        </ion-slide>
+        
+      </ion-slides>
+  </ion-content>

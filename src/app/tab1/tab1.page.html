@@ -1,47 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="green">
     <ion-title>
-      Usuários
+      Adoções
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="light">
+      <ion-list>
+          <ion-card>
+            <ion-card-header>
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png">
+              <ion-card-title style="text-align: center;">Pongo</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-button color="light">
+                <ion-icon name="heart"></ion-icon>
+              </ion-button>
 
-  <ion-item *ngFor="let user of listaUsuarios">
-    <ion-avatar slot="start">
-      <img [src]="user.avatar">
-    </ion-avatar>
-    <ion-label>
-      <div>
-        <h1>{{ user.first_name }} {{ user.last_name }}</h1>
-        <!--"mailto" faz com que clicando no e-mail, já abra o programa de e-mail do dispositivo com o e-mail já preenchido-->
-        <a [href]="'mailto:' + user.email">{{ user.email }}</a>
-      </div>
-    </ion-label>
-  </ion-item>
-
-  <ion-grid>
-    <ion-row>
-
-      <ion-col>
-        <ion-button expand="block" (click)="buscarUsuarios(page - 1)" *ngIf="page > 1">
-          <ion-icon slot="icon-only" name="arrow-undo-outline"></ion-icon>
-        </ion-button>
-      </ion-col>
-
-      <ion-col>
-        {{page}} de {{totalPaginas}}
-      </ion-col>
-      
-      <ion-col>
-        <ion-button expand="block" (click)="buscarUsuarios(page + 1)" *ngIf="page < totalPaginas">
-          <ion-icon slot="icon-only" name="arrow-redo-outline"></ion-icon>
-        </ion-button>
-
-      </ion-col>
-
-    </ion-row>
-  </ion-grid>
-
+              <ion-button class="espaco-l" color="light">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+      </ion-list> 
 </ion-content>
